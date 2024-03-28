@@ -26,8 +26,8 @@ cv2.imshow("image show gray",img_gray)
 
 
 plt.subplot(221)
-img = plt.imread("lenna.png") 
-# img = cv2.imread("lenna.png", False) 
+img = plt.imread("lenna.png")
+# img = cv2.imread("lenna.png", False)
 plt.imshow(img)
 print("---image lenna----")
 print(img)
@@ -49,12 +49,12 @@ print(img_gray)
 #             img_gray[i, j] = 0
 #         else:
 #             img_gray[i, j] = 1
- 
-img_binary = np.where(img_gray >= 0.5, 1, 0) 
+
+img_binary = np.where(img_gray >= 0.5, 1, 0)
 print("-----imge_binary------")
 print(img_binary)
 print(img_binary.shape)
 
-plt.subplot(223) 
+plt.subplot(223)
 plt.imshow(img_binary, cmap='gray')
 plt.show()
