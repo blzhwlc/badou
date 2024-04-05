@@ -15,7 +15,7 @@ def nearest_inter(img):
 
 img = cv2.imread("../lenna.png")
 # new_img = nearest_inter(img)
-new_img1 = cv2.resize(img, (800,800), interpolation=cv2.INTER_NEAREST)
+new_img1 = cv2.resize(img, (200,200), interpolation=cv2.INTER_NEAREST)
 cv2.imshow("img:",img)
 cv2.imshow("nearest：",new_img1)
 cv2.waitKey()
