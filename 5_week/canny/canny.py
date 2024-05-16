@@ -12,7 +12,7 @@ cv2.Canny(image, threshold1, threshold2[, edges[, apertureSize[, L2gradient ]]])
 第三个参数是阈值2。
 '''
 
-img = cv2.imread("lenna.png", 1)
+img = cv2.imread("../../6_week/lenna.png", 1)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 cv2.imshow("canny", cv2.Canny(gray, 200, 300))
 cv2.waitKey()

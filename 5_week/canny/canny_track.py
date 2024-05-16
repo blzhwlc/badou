@@ -27,7 +27,7 @@ max_lowThreshold = 100
 ratio = 3  
 kernel_size = 3  
   
-img = cv2.imread('lenna.png')  
+img = cv2.imread('../../6_week/lenna.png')
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)  #转换彩色图像为灰度图
   
 cv2.namedWindow('canny result')  
