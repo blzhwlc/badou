@@ -2,12 +2,12 @@ import numpy as np
 
 class CPCA:
     def __init__(self,A,K):
-        self.A = A  # 样本矩阵X
+        self.A = A  # 样本矩阵A
         self.K = K  # K阶降维矩阵的K值
         self.centrA = []  # 矩阵X的中心化
         self.C = []  # 样本集的协方差矩阵C
-        self.U = []  # 样本矩阵X的降维转换矩阵
-        self.Z = []  # 样本矩阵X的降维矩阵Z
+        self.U = []  # 样本矩阵A的降维转换矩阵
+        self.Z = []  # 样本矩阵A的降维矩阵Z
 
         self.centrA = self._centralized()
         self.C = self._cov()
